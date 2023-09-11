@@ -1,1 +1,0 @@
-export const qcStatus = { '合格': 'success-row','不合格':'warning-row','待检':'normal-row' }
