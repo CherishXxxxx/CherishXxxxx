@@ -1,0 +1,120 @@
+ .el-table{
+//   /* 表格字体颜色 */
+   color:white;
+//   /* 表格边框颜色 */
+//   /* border: 0.5px solid #758a99; */
+//   height: 500px;
+   }
+
+body .el-table th.gutter{
+  display: table-cell!important;
+}
+.el-table--border, .el-table--group{
+  border: none;
+}
+.el-table__header-wrapper th:nth-last-of-type(2){
+  border-right: none;
+}
+.el-table--border::after, .el-table--group::after{
+  width: 0;
+}
+ .el-table th.is-center {
+  border-bottom:1px solid #fff;
+}
+  /* 表格内背景颜色 */
+  .el-table thead.is-group th {
+    background-color: transparent;    
+  }
+  .el-table--border, .el-table--group {
+    /* border: 1px solid #EBEEF5; */
+    border:none;
+}
+.el-table th, .el-table tr,.el-table td{
+  border: 0;
+  background-color: transparent;
+}
+//   /* 双数行背景颜色 */
+//   .el-table--striped .el-table__body tr.el-table__row--striped td {
+//     background-color: transparent;
+//   }
+  /* 使表格背景透明 */
+  .el-table th, .el-table tr {
+  background-color: transparent;
+  }
+
+//透明化整体
+.el-table,
+.el-table__expanded-cell {
+  background-color: transparent !important;
+}
+//透明化行、单元格
+el-table th,
+.el-table tr,
+.el-table td {
+  background-color: transparent !important;
+}
+//hover时样式
+.el-table tbody tr:hover>td {
+  background-color: transparent !important
+}
+
+//偶数行样式
+.el-table__row--striped td {
+  background-color: transparent !important
+}
+//奇数行样式
+.el-table__row:not(.el-table__row--striped) {
+  background: #1439391c !important;
+}
+.el-table::before {
+  height: 0px;
+}
+
+.el-table thead {
+  color: white;
+  font-weight: 500;
+  background:linear-gradient(180deg,rgba(0,106,255,1) 0%,rgba(0,70,168,0.8) 60%,rgba(3,83,192,0.67) 100%);
+  // opacity:0.8;
+  tr{
+    height: 50px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+}
+
+.el-table .el-table__body {
+  tr {
+    height: 50px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+}
+
+.el-table td, .el-table th.is-leaf {
+  border-bottom: 1px solid rgba(0,61,160,1);
+}
+.el-table .cell{
+  //  padding-left: 0px !important;
+  // color:#fff;
+  line-height:32px;
+  white-space: nowrap;
+  span{
+  //  margin-left: 0px !important;
+    color: white;
+  }
+}
+
+// .small-size{
+
+// }
+
+ .el-table .success-row {
+    color: green !important;
+  }
+ 
+  .el-table .warning-row {
+    color: red !important;
+  }
+  .el-table .normal-row {
+    color: white !important;
+  }
